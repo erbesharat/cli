@@ -6,11 +6,11 @@ cli is the command line tool designed for resumic users to easily create an empt
 
 # Getting started
 ```
-$ go build resumic.go
+$ go get 
 ```
 ## Using commands
 ### init
 ```
-$ ./resumic init
+$ resumic init
 ```
 Creates an empty resume.json file with examples to give a better understanding of the json file.
