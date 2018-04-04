@@ -1,4 +1,5 @@
 # cli
+cli is the command line tool designed for resumic users to easily create an empty and new resume.json file via the command line.
 
 # Getting started
 ```
