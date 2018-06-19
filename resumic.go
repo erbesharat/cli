@@ -19,9 +19,17 @@ func main() {
 	// Switch on the sub command
 	switch os.Args[1] {
 	case "init":
-		//init.Parse(os.Args[2:])
 		helper.InitResume()
 		os.Exit(1)
+	case "serve":
+		helper.ResumeServer(os.Args[1:])
+		os.Exit(1)
+	case "theme":
+		if os.Args[2] == "get" {
+			helper.GetTheme(os.Args[3])
+		} else if os.Args[2] == "list" {
+			helper.ListTheme()
+		}
 	default:
 		flag.PrintDefaults()
 		os.Exit(1)
