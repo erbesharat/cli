@@ -6,7 +6,7 @@ cli is the command line tool designed for resumic users to easily create an empt
 
 # Getting started
 ```
-$ go get 
+$ go get github.com/resumic/cli
 ```
 ## Using commands
 ### help 
