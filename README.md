@@ -9,8 +9,45 @@ cli is the command line tool designed for resumic users to easily create an empt
 $ go get 
 ```
 ## Using commands
+### help 
+```
+$ resumic help
+```
+Lists the available commands and flags.
 ### init
 ```
 $ resumic init
 ```
 Creates an empty resume.json file with examples to give a better understanding of the json file.
+
+### theme
+The theme command has the following sub-commands:
+#### list
+```
+$ resumic theme list
+```
+Lists the avvailable theme for download.
+
+#### get
+```
+$ resumic theme get [theme-name]
+```
+Downloads the theme locally for use.
+
+### test 
+```
+$ resumic test filename
+```
+### serve
+```
+$ resumic serve
+```
+##### flags usage --theme:
+```
+$ resumic serve --theme [themeName]
+```
+###  render
+```
+$ resumic render --theme [themename] --format html
+```
+Downloads the page in HTML format.
